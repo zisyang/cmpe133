@@ -1,0 +1,19 @@
+<%-- any content can be specified here e.g.: --%>
+            <div id="footer">
+                    <DIV STYLE="position:absolute; margin-top: 3px; margin-left: -390px; width:850px; height:80px; color: grey; opacity: 0.9; font-size: x-large; font-family: Impact, Charcoal, sans-serif;">
+                <a href="https://www.facebook.com/" TARGET="_blank"><img src="http://www.buttonshut.com/Facebook-Buttons/Facebook-Buttons-75-59-.png" width="30" border="0"/></a>
+                <a href="http://twitter.com/" TARGET="_blank"><img src="http://www.buttonshut.com/Twitter-Buttons/Twitter-Buttons-17-32-.png" width="30" border="0"/></a>        
+    </DIV>
+
+                <p><br>Rocket Deals &copy; Copyright 2012 
+                    <br>Powered by Team Rocket
+                    <br>Erni Ali, Noel Ramirez, Brandon Thai, Philip Vaca, Zi Yang.
+                    <br> 
+                    <a href="about">About Us</a>  |
+                     <a href="help">Help</a>  |
+                     <a href="contact">Contact Us</a>                    
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

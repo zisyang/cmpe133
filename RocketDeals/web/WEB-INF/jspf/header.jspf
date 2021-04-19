@@ -1,0 +1,181 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+response.setHeader("Cache-Control","no-store");
+response.setHeader("Pragma","no-cache");
+response.setDateHeader ("Expires", 0); 
+%>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <%-- css links --%>
+        <link rel="stylesheet" type="text/css" href="css/rocketdeals.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Rocket Deals</title>
+
+        <%-- Login Script --%>
+        <script src="jquery-1.7.1.js"></script>
+        <script>
+            function login()
+            {
+                $('#login-trigger').click(function(){
+                    $(this).next('#login-content').slideToggle();
+                    $(this).toggleClass('active');
+                    if ($(this).hasClass('active')) 
+                        $(this).find('span').html('&#x25B2;')
+                    else 
+                        $(this).find('span').html('&#x25BC;')
+                });
+            }
+        </script>
+        
+<script type="text/javascript">
+function countdown() {
+
+var currentDate = new Date(); // Today's Date
+
+var targetDate = new Date(); // Date we are counting down to
+targetDate.setMonth(<%=request.getSession().getAttribute("expMonth")%>,<%=request.getSession().getAttribute("expDay")%>); // (from 0-11; month), (from 1-31; date)
+targetDate.setFullYear(<%=request.getSession().getAttribute("expYear")%>);
+targetDate.setHours(23);
+targetDate.setMinutes(59);
+targetDate.setSeconds(59);
+targetDate.setMilliseconds(59);
+
+var msec = targetDate.getTime() - currentDate.getTime(); // The time left in milliseconds
+var sec = Math.floor(msec / 1000);
+var mins = Math.floor(sec / 60);
+var hours = Math.floor(mins / 60);
+var days = Math.floor(hours / 24);
+sec = sec % 60;
+mins = mins % 60;
+hours = hours % 24;
+
+/* Add Leading Zeros to Hours, Min, Sec */
+if (sec < 10) {
+    sec = '0'+sec;
+}
+if (mins < 10) {
+    mins = '0'+mins;
+}
+if (hours < 10) {
+    hours = '0'+hours;
+}
+
+document.getElementById('countdown').innerHTML = days+':'+hours+':'+mins+':'+sec;
+var t = setTimeout('countdown();',1000);
+}
+</script>             
+        
+    </head>
+    
+    <body OnLoad ="login(); countdown();" >
+        
+    <%-- Login/Register Header --%>
+    <header class="cf">
+        
+         <!--<div id ="searchBar">
+                <div id="searchwrapper">
+                    <form action="category">
+                        <input style="z-index: -1" type="text" class="searchbox" name="s" placeholder ="Enter ZIP"/>
+                        <input type="image" src="img/blankCopy.png" class="searchbox_submit" value="" />
+                    </form>
+                </div>   
+            </div>   -->
+        <nav>
+            <form action="category" method ="post">
+                <input type="text" name="zipCode" class="inputTextMain" required="required" placeholder="Enter Your ZIP Code" maxlength="5"> 
+            <input id="submit" style="float:none;" type="submit" value="Go" class="inputTextMain">
+             </form>
+            <%
+                String myname = (String) session.getAttribute("currentSessionName");
+                    
+                if (myname == null) {
+            %>            
+            <ul>
+                <li id="login">
+                    <a id="login-trigger" href="#">
+                        Log in <span>&#x25BC;</span>
+                    </a>
+                    <div id="login-content">
+                        <form method = "post" action = "login">
+                            <fieldset id="inputs">
+                                <input id="username" type="email" name="emailLogin" placeholder="Your email address" required maxlength="40">   
+                                <input id="password" type="password" name="passwordLogin" placeholder="Password" required maxlength="10">
+                            </fieldset>
+                            <fieldset id="actions">
+                                <input type="submit" id="submit" value="Log in">
+                                <label><a href="recoverPassword"> Forgot your password?</a></label>
+                            </fieldset>
+                        </form>
+                    </div>                     
+                </li> 
+                <li id="signup">
+                    <a href="register">Register</a>
+                </li>
+            </ul>
+                    <% 
+                     }else {
+                      %>
+                      <ul>
+                   <li id="login">
+                    <a id="login-trigger" href="#">
+                        Welcome <% if (myname.length()<6) 
+                                       out.print(myname);
+                                   else
+                                       out.print(myname.substring(0,6)+"...");
+                        %><span>&#x25BC;</span>
+                    </a>
+                    <div id="login-content">
+                            <input type="button" id="submit2" value="My Page"
+                                   onclick="javascript:window.location=<% if(session.getAttribute("currentSessionType").toString() !=null)
+                                                                             { %>
+                                       '<%=session.getAttribute("currentSessionType").toString()%>Profile'<% }%>">
+                        <br><br><br>
+                            <input type="button" id="submit2" value="RocketDeals"
+                                   onclick="javascript:window.location='index.jsp'">
+                    </div>                     
+                </li> 
+                <li id="signup">
+                    <a href="logout">Logout</a>
+                </li>
+                      </ul>
+                     <%
+                      }
+                       %>
+                            
+          <div>The time is now <%= new java.util.Date() %>
+            <%
+                    out.print( ", Your machine's address is " );
+                    out.print( request.getRemoteHost());
+                %>
+            </div>       
+        </nav>
+    </header>
+    
+    <%-- Banner/SearchBar --%>
+    <div id="main">
+        <div id="header">
+<!--            <div id="widgetBar">
+                <div class="headerWidget">
+                    <a href="http://localhost:8080/RocketDeals/category">
+                    [ categories ]
+                    </a>
+                </div>
+                <div class="headerWidget">
+                    [ something ]
+                </div>                   
+                <div class="headerWidget">
+                    [ something ]
+                </div>                    
+            </div>-->
+
+
+<!-- This should lead to the coupon's front page-->
+
+            <a href="index.jsp">
+                <img src = "img/rocketIcon.png" id="logo" alt="Rocket Deals logo">
+            </a>
+                
+        </div>

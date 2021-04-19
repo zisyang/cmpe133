@@ -1,0 +1,620 @@
+/* 
+    Document   : rocketdeals
+    Created on : Feb 28, 2012, 1:57:02 PM
+    Author     : BECoS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 850px;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 12px;
+}
+
+/*register page style*/
+.h2Main {
+
+	font: bold 36px 'SerifaStd45Light', sans-serif;
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.inputTextMain {
+
+	border: 1px #c4c4c4 solid;
+	height: 28px;
+	background: #fdfdfd url(../images/iam-inut-grad.png) repeat-x;
+	width: 245px;
+}
+
+.regLabel {
+	width: 5em;
+	margin-right: 3em;
+        padding-right: 82px;
+}
+
+.btn-submit {
+	display: inline-block;
+	margin: 19px 0 10px 0;
+	background: #0099FF;
+	border: none;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	color: #FFFFFF;
+	font: 600 17px/40px arial;
+	text-decoration: none;
+	height: 40px;
+	width: 198px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#registrationForm{
+    width: 700px;
+    height: 700px;
+}
+/*end register page style*/
+
+/* coupon page styles */
+.buyButton{
+background-image:url(../img/buy.png);
+background-repeat:no-repeat; /*important*/
+height: 100px; 
+width: 320px; 
+float: left;
+padding: 0;
+margin-left: -57px; 
+margin-top: 5px;
+position: relative; /*important*/
+}
+
+.buyButton_submit{
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/   
+margin-top: -38px;
+
+width: 150px;
+height: 78px;
+top: 50%;
+left: 50%;
+}
+
+.buyButton_submit:hover{
+    background:url(../img/buy2.png) no-repeat;
+}
+
+.buyButton p{
+    font-size: x-large;
+    margin-top: 35px;
+    margin-left: -150px;
+    padding: 0;
+}
+
+#couponLeftColumn {
+    height: 400px;
+    width: 350px;
+    float: left;
+    background: #ccc;
+}
+
+#couponLeftColumn table{
+    font-size: large;
+    float: left;
+} 
+
+#couponLeftColumn td{
+    text-align: center;
+} 
+/*end coupon page style*/
+
+#main { background: whitesmoke;}
+
+#header {
+    height: 200px;
+    width: 850px;
+    background: url(../img/RocketDeals2.png)no-repeat;
+}
+
+#searchBar  {
+    height: 50px;
+    float: left;
+    background-color: #777;
+    margin-top: 4px;
+}
+
+#logo {
+    height: auto;
+    width: auto;
+    float: left;
+    margin-left: -80px;
+    margin-top: -60px;
+}
+
+#logoText {
+    float: left;
+    margin: 20px 0 0 70px;
+    /* font styles apply to text within alt tags */
+    font-family: 'American Typewriter', Courier, monospace;
+    font-size: 50px;
+    color: #333;
+}
+
+#footer {
+    height: 80px;
+    width: 850px;
+    clear: left;
+    background: #aaa;
+}
+
+hr {
+    border: 0;
+    background-color: #333;
+    height: 1px;
+    margin: 0 25px;
+    width: 300px;
+}
+
+#indexLeftColumn {
+    height: 400px;
+    width: 350px;
+    float: left;
+    background: #ccc;
+}
+
+#welcomeText    {
+    font-family: blackadder itc;
+    line-height: 25px;
+    font-size: x-large;
+}
+#indexRightColumn {
+    height: 400px;
+    width: 500px;
+    float: left;
+    background: whitesmoke;
+}
+
+#widgetBar  {
+    height: 50px;
+    width: 850px;
+    float: right;
+    background: #ccc;    
+}
+
+.headerWidget   {
+    width: 194px;
+    margin: 20px 2px;
+    font-size: small;
+    float: right;
+    line-height: 25px;
+    background: #aaa;
+}
+
+#categoryTitle {
+    opacity: .6;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: xx-large;
+    float: right;
+    /*background-color: #f5eabe;*/
+    padding: 7px;
+}
+
+#selectedCategory {
+    font-family:"Times New Roman",Times,serif;
+    color: red;  
+}
+
+.categoryText {
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.categoryButton {
+    text-decoration: none;
+    background-color: transparent;
+    color:cyan;
+}
+
+#searchwrapper {
+width:425px; /*follow your image's size*/
+height:50px;/*follow your image's size*/
+background-image:url(../img/searchBar2.png);
+background-repeat:no-repeat; /*important*/
+padding:0px;
+margin:0px;
+position:relative; /*important*/
+float: right;
+}
+ 
+#searchwrapper form { display:inline ; }
+ 
+.searchbox {
+font-size: 25px;
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/
+top: 2px;
+left:10px;
+width:305px;
+height:40px;
+}
+ 
+.searchbox_submit {
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/
+
+left:325px;
+width:100px;
+height:50px;
+}
+
+.searchbox_submit:hover {
+    background:url(../img/goButton2.png) no-repeat;
+}
+
+/* checkout page styles */
+#checkoutTable {
+    width: 360px;
+    background-color: #f5eabe;
+    float: left;
+    height: 280px;
+}
+
+#checkoutTable td {
+    text-align: center;
+}
+  
+#infoBox {
+    width: 300px;
+    padding-left: 30px;
+    float: left;
+}
+
+#priceBox {
+    padding: 10px;
+    margin: 10px 0;
+    height: 128px;
+    background-color: #c3e3e0;
+}
+
+
+/* confirmation page styles */
+#confirmationText {
+    margin: 0 20px 20px;
+    padding: 10px;
+    background-color: #f5eabe;
+    float: left;
+    width:540px;
+}
+
+.summaryColumn {
+    margin-top: 15px;
+    width: 50%;
+    float: left;
+}
+
+#orderSummaryTable {
+    width: 100%;
+    text-align: left;
+    height: 200px;
+}
+
+#deliveryAddressTable {
+    width: 70%;
+    margin-left: 15%;
+    text-align: left;
+    height: 200px;
+}
+
+
+/*------Login/Register css---------------*/
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+		
+fieldset    {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+		
+input:focus,textarea:focus {
+    outline: none;
+}
+
+/*----------------------*/
+		
+.cf:before, .cf:after {
+    content:"";
+    display:table;
+}
+		
+.cf:after {
+    clear:both;
+}
+		
+.cf {
+    zoom:1;
+}
+		  
+/*----------------------*/
+
+header {
+    padding: 8px 10%;
+    border-bottom: 1px solid #fff;
+    background-color: #777;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#777), to(#555));
+    background-image: -webkit-linear-gradient(top, #777, #555);
+    background-image: -moz-linear-gradient(top, #777, #555);
+    background-image: -ms-linear-gradient(top, #777, #555);
+    background-image: -o-linear-gradient(top, #777, #555);
+    background-image: linear-gradient(top, #777, #555);
+    -moz-box-shadow: 0 -3px 3px rgba(0,0,0,.5) inset;
+    -webkit-box-shadow: 0 -3px 3px rgba(0,0,0,.5) inset;
+    box-shadow: 0 -3px 3px rgba(0,0,0,.5) inset;
+}
+		
+/*----------------------*/
+		
+nav ul {
+    margin: -39px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: right;
+    background: #eee;
+    border-bottom: 1px solid #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;    
+}
+		
+nav li {
+    float: left;          
+}
+		
+nav #login {
+    border-right: 1px solid #ddd;
+    -moz-box-shadow: 1px 0 0 #fff;
+    -webkit-box-shadow: 1px 0 0 #fff;
+    box-shadow: 1px 0 0 #fff;  
+}
+		
+nav #login-trigger,
+nav #signup a {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #444;
+    text-shadow: 0 1px 0 #fff; 
+}
+		
+nav #signup a {
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+		
+nav #login-trigger {
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+		
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+    background: #fff;
+}
+		
+nav #login-content {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    z-index: 999;    
+    background: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(top, #fff, #eee);
+    background-image: -moz-linear-gradient(top, #fff, #eee);
+    background-image: -ms-linear-gradient(top, #fff, #eee);
+    background-image: -o-linear-gradient(top, #fff, #eee);
+    background-image: linear-gradient(top, #fff, #eee);  
+    padding: 15px;
+    -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    -moz-border-radius: 3px 0 3px 3px;
+    -webkit-border-radius: 3px 0 3px 3px;
+    border-radius: 3px 0 3px 3px;
+}
+		
+nav li #login-content {
+    right: 0;
+    width: 250px;  
+}
+		
+/*--------------------*/
+		
+#inputs input {
+    background: #f1f1f1;
+    padding: 6px 5px;
+    margin: 0 0 5px 0;
+    width: 238px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 1px #ccc inset;
+    -webkit-box-shadow: 0 1px 1px #ccc inset;
+    box-shadow: 0 1px 1px #ccc inset;
+}
+		
+#inputs input:focus {
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    -moz-box-shadow: 0 0 0 1px #e8c291 inset;
+    -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
+    box-shadow: 0 0 0 1px #e8c291 inset;
+}		
+
+/*--------------------*/
+		
+#login #actions {
+    margin: 10px 0 0 0;
+}
+		
+#submit {		
+    background-color: #d14545;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e97171), to(#d14545));
+    background-image: -webkit-linear-gradient(top, #e97171, #d14545);
+    background-image: -moz-linear-gradient(top, #e97171, #d14545);
+    background-image: -ms-linear-gradient(top, #e97171, #d14545);
+    background-image: -o-linear-gradient(top, #e97171, #d14545);
+    background-image: linear-gradient(top, #e97171, #d14545);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+    border: 1px solid #7e1515;
+    float: left;
+    height: 30px;
+    padding: 0;
+    width: 100px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #fff;
+}
+		
+#login #submit:hover,
+#login #submit:focus {		
+    background-color: #e97171;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d14545), to(#e97171));
+    background-image: -webkit-linear-gradient(top, #d14545, #e97171);
+    background-image: -moz-linear-gradient(top, #d14545, #e97171);
+    background-image: -ms-linear-gradient(top, #d14545, #e97171);
+    background-image: -o-linear-gradient(top, #d14545, #e97171);
+    background-image: linear-gradient(top, #d14545, #e97171);
+}	
+		
+#login #submit:active {		
+    outline: none;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;		
+}
+		
+#login #submit::-moz-focus-inner {
+    border: none;
+}
+		
+#login label {
+    float: right;
+    line-height: 30px;
+}
+		
+#login label input {
+    position: relative;
+    top: 2px;
+    right: 2px;
+}	
+
+#submit2 {		
+    background-color: #d14545;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e97171), to(#d14545));
+    background-image: -webkit-linear-gradient(top, #e97171, #d14545);
+    background-image: -moz-linear-gradient(top, #e97171, #d14545);
+    background-image: -ms-linear-gradient(top, #e97171, #d14545);
+    background-image: -o-linear-gradient(top, #e97171, #d14545);
+    background-image: linear-gradient(top, #e97171, #d14545);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+    border: 1px solid #7e1515;
+    float: left;
+    height: 30px;
+    padding: 0;
+    width: 230px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #fff;
+}
+		
+#login #submit2:hover,
+#login #submit2:focus {		
+    background-color: #e97171;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d14545), to(#e97171));
+    background-image: -webkit-linear-gradient(top, #d14545, #e97171);
+    background-image: -moz-linear-gradient(top, #d14545, #e97171);
+    background-image: -ms-linear-gradient(top, #d14545, #e97171);
+    background-image: -o-linear-gradient(top, #d14545, #e97171);
+    background-image: linear-gradient(top, #d14545, #e97171);
+}	
+		
+#login #submit2:active {		
+    outline: none;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;		
+}
+		
+#login #submit2::-moz-focus-inner {
+    border: none;
+}
+
+/*--------------------*/
+		
+#about {
+    margin: 15px;
+}
+		
+#about a {
+    color: #555;
+}
+/*--------------------*/
+
+textarea#styled {
+	width: 244px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+        vertical-align: middle;
+        margin-left: -80px;
+/*	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;*/
+}
+
+strong#countdown {
+    text-align: right;
+    color: #CC0000;
+    font-size: 24px;
+}
+em#label {
+
+    text-align: left;
+
+    color: #996600;
+    font-size: 10px;
+}
+div.count {
+position: relative;
+}
